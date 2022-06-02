@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PMUProjekat</string>
+    <string name="naslov_projekta">Northwind API Android APP</string>
+    <string name="kategorije">Kategorije</string>
+    <string name="pregled_kategorija">Pregled kategorija</string>
+    <string name="znak_dodaj">+</string>
+    <string name="naziv_kategorije">Naziv kategorije</string>
+    <string name="opis_kategorije">Opis kategorije</string>
+    <string name="detaljnije">Detaljnije</string>
+    <string name="proizvodi">Proizvodi</string>
+    <string name="pregled_proizvoda">Pregled proizvoda</string>
+    <string name="pregled_porudzbina">Pregled porudzbina</string>
+    <string name="pregled_porudzbine">Pregled porudzbine</string>
+    <string name="porudzbine">Porudzbine</string>
+</resources>

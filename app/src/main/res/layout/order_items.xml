@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aktivnosti.DetaljiPorudzbinaActivity">
+
+    <TextView
+        android:id="@+id/pregledSorted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/pregled_porudzbine"
+        app:layout_constraintStart_toStartOf="@+id/uProizvoda"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lstProizvodiView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lstDobavljaciView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lstDobavljaciView2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lstDobavljaciView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lstProizvodiView2"
+        app:layout_constraintTop_toBottomOf="@+id/textDobavljaci" />
+
+    <TextView
+        android:id="@+id/uProizvoda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="26dp"
+        android:text="Ukupno proizvoda: "
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/ukupnoProizvoda"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pregledSorted" />
+
+    <TextView
+        android:id="@+id/ukupnoProizvoda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/uProizvoda"
+        app:layout_constraintTop_toTopOf="@+id/uProizvoda" />
+
+    <TextView
+        android:id="@+id/txtproizvodi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="7dp"
+        android:text="Proizvodi:"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/uProizvoda"
+        app:layout_constraintTop_toBottomOf="@+id/uProizvoda" />
+
+    <TextView
+        android:id="@+id/textDobavljaci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="13dp"
+        android:text="Dobavljaci:"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/uProizvoda"
+        app:layout_constraintTop_toBottomOf="@+id/ukupnoProizvoda" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
